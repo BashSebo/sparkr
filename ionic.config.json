@@ -1,0 +1,7 @@
+{
+  "name": "sparkr",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

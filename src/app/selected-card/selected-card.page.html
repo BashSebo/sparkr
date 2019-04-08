@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listing
+      <button (click)="gotoMap()">
+        <ion-icon name="locate"></ion-icon>
+        <!-- <ion-icon name="person"></ion-icon> -->
+      </button></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card (click)="dismiss()">
+    <ion-card-header> {{card.description}}</ion-card-header>
+      <ion-card-content> {{card.subtitle}}</ion-card-content>
+    <span *ngIf="card.img==null">{{card.id}}</span>
+    <ion-img *ngIf="card.img!=null" [src]="'assets/'+card.img"></ion-img>
+    {{item.description}}
+  </ion-card>
+
+</ion-content>
